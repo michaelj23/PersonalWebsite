@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="flatly.css">
+		<script src="jquery-1.11.2.min.js"></script>
+		<script src="bootstrap.min.js"></script>
+		<title>Michael Ju</title>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<ul class="nav nav-tabs">
+				<li class="active"><a href="#about" data-toggle="tab">About</a></li>
+				<li><a href="#coursework" data-toggle="tab" id="courseworkbutton">Coursework</a></li>
+				<li><a href="#projects" data-toggle="tab" id="projectbutton">Projects</a></li>
+			</ul>
+		</div>
+		<div class="container">
+			<row>
+				<div class="col-xs-3">
+					<img src="calpic1.jpg" class="img-responsive img-rounded" style="margin-top:25px">
+				</div>
+				<div class="col-xs-9 lead">
+					<h2>Michael Ju</h2>
+					<p>Hi! I'm Michael. I'm an undergraduate at the University of California, Berkeley, and I'm currently pursuing a degree in Computer Science.</p>
+					<p>Feel free to view my <a href="Michael Ju.pdf" target="_blank">resume</a> or contact me through:</br>
+					<strong>Email</strong>: <a href="mailto:ju.michael@gmail.com">ju.michael@gmail.com</a></br>
+					<strong>Phone</strong>: 510-364-8055</br>
+					</p>
+				</div>
+			</row>
+		</div>
+		<div class="tab-content">
+				<div id="about" class="tab-pane fade in active container">
+					<row>
+						<div class="col-xs-12">
+							<h2>About Me</h2>
+							<p>Growing up in the suburbs of Fremont, California, I was lucky enough to go to a high school that offered an excellent AP Computer Science class. It was here that I realized how fun and rewarding problem-solving through code could be. I decided to continue my CS education at Berkeley, where my love for the field has only continued to grow. I'm currently the most interested in and experienced with web development, in both front end HTML/CSS/Javascript and back-end Python support. But of course, as an undergrad entering his second semester in Berkeley, I'm extremely eager to explore new topics. When I'm not coding, I enjoy running long distances, slapping the bass (there's a reference there somewhere), and playing Super Smash Bros.</p>
+							<p>Thanks for reading!</br>Michael</p>
+						</div>
+					</row>
+				</div>
+
+
+				<div id="coursework" class="tab-pane fade container">
+					<row>
+						<div class="col-xs-12">
+							<h2>Coursework</h2>
+						</div>
+					</row>
+					<row>
+						<div class="col-xs-4">
+							<div class="btn-group-vertical btn-block">
+								<div class="btn-group">
+									<button type="button" class="btn btn-success btn-block dropdown-toggle" data-toggle="dropdown"> Fall 2014 <span class="caret"></span></button>
+										<ul class="dropdown-menu">
+											<li><a href="#" id="61A" class="link">CS61A: The Structure and Interpretation of Computer Programs</a></li>
+											<li><a href="#" id="54" class="link">MATH 54: Linear Algebra and Differential Equations</a></li>
+										</ul>
+								</div>
+								<div class="btn-group">
+									<button type="button" class="btn btn-success btn-block dropdown-toggle" data-toggle="dropdown"> Spring 2015 <span class="caret"></span></button>
+										<ul class="dropdown-menu">
+											<li><a href="#" id="61B" class="link">CS61B: Data Structures and Advanced Programming</a></li>
+											<li><a href="#" id="70" class="link">CS70: Discrete Mathematics and Probability Theory</a></li>
+										</ul>
+								</div>
+								<!-- <div class="btn=group">
+									<button type="button" class="btn btn-success disabled btn-block dropdown-toggle" data-toggle="dropdown"> Fall 2015 <span class="caret"></span></button>
+										<ul class="dropdown-menu">
+										</ul>
+								</div>
+								<div class="btn=group">
+									<button type="button" class="btn btn-success disabled btn-block dropdown-toggle" data-toggle="dropdown"> Spring 2016 <span class="caret"></span></button>
+										<ul class="dropdown-menu">
+										</ul>
+								</div>
+								<div class="btn=group">
+									<button type="button" class="btn btn-success disabled btn-block dropdown-toggle" data-toggle="dropdown"> Fall 2016 <span class="caret"></span></button>
+										<ul class="dropdown-menu">
+										</ul>
+								</div>
+								<div class="btn=group">
+									<button type="button" class="btn btn-success disabled btn-block dropdown-toggle" data-toggle="dropdown"> Spring 2017 <span class="caret"></span></button>
+										<ul class="dropdown-menu">
+										</ul>
+								</div>
+								<div class="btn=group">
+									<button type="button" class="btn btn-success disabled btn-block dropdown-toggle" data-toggle="dropdown"> Fall 2017 <span class="caret"></span></button>
+										<ul class="dropdown-menu">
+										</ul>
+								</div>
+								<div class="btn=group">
+									<button type="button" class="btn btn-success disabled btn-block dropdown-toggle" data-toggle="dropdown"> Spring 2018 <span class="caret"></span></button>
+										<ul class="dropdown-menu">
+										</ul>
+								</div> -->
+							</div>
+						</div>
+						<div class="col-xs-8" id="coursedesc">
+							<div class="descriptions" id="61Adesc">
+								<p style="font-size:20px">CS61A: The Structure and Interpretation of Computer Programs</p>
+								<p>This course focused mainly on Python, covering computing paradigms like recursion and object-oriented programming, data structures like linked lists and trees, and some more advanced topics, including iterators and streams. It also covered functional programming and relevant topics, such as tail calls, by introducing us to Scheme, a derivative of Lisp. Finally, it exposed us to declarative programming by discussing SQL tables, joins, and recursive queries.</p>
+							</div>
+							<div class="descriptions" id="54desc">
+								<p style="font-size:20px">MATH 54: Linear Algebra and Differential Equations</p>
+								<p>The first half of MATH 54 introduced us to fundamental but crucial linear algebra topics, including linear systems, linear combinations, independence, and transformations, vector spaces and bases, and eigenvector/values. In the second half, we moved on to ordinary differential equations of second order and higher and partial differential equations, which were much more complex and involved Fourier sine and cosine series.</p>
+							</div>
+							<div class="descriptions" id="61Bdesc">
+								<p style="font-size:20px">CS61B: Data Structures and Advanced Programming</p>
+								<p>Looking forward to this class!</p>
+							</div>
+							<div class="descriptions" id="70desc">
+								<p style="font-size:20px">CS70: Discrete Mathematics and Probability Theory</p>
+								<p>A little apprehensive about this one...</p>
+							</div>
+							<script>
+								$(document).ready(function() {
+									$('#courseworkbutton').click(function() {
+										$('.descriptions').hide();
+									})
+									$('.link').click(function() {
+										$('.descriptions').hide();
+										var id = "#" + event.target.id + "desc";
+										$(id).show();
+									})
+									$('#projectbutton').click(function() {
+										$('.projdescs').hide();
+									})
+									$('.projbtn').click(function() {
+										$('.projdescs').hide();
+										var id = '#' + $(this).attr('id') + 'desc';
+										$(id).show();
+									})
+								})
+							</script>
+						</div>
+					</row>
+				</div>
+
+
+				<div id="projects" class="tab-pane fade container">
+					<row>
+						<div class="col-xs-12">
+							<h2>Projects</h2>
+						</div>
+					</row>
+					<row>
+						<div class="col-xs-4">
+							<div class="btn-group-vertical btn-block">
+								<button  type="button" class="projbtn btn btn-block btn-success" id="pollsite">Pollsite</button>
+								<button type="button" class="projbtn btn btn-block btn-success" id="scheme">Scheme Interpreter</button>
+							</div>
+						</div>
+						<div class="col-xs-8">
+							<div class="projdescs" id="pollsitedesc">
+								<p style="font-size:20px">Pollsite</p>
+								<p>Independent Project</p>
+								<p>Skills: HTML/CSS, Javascript & jQuery, and Bootstrap for front-end display, Django-powered backend</p>
+								<p><a href="https://github.com/michaelj23/Pollsite" target="_blank">Pollsite</a> is a Django-powered project I undertook mainly to get familiar with the Django framework and learn about the functionality it offered. It's a simple website built off the Django tutorial that lets registered members make their own polls and vote on other member's polls. Pollsite is composed of two applications: a basic user signup/login application and a voting application that processes users' votes as well as their creation and removal of polls. This project definitely got me accustomed to Django's model-view-template system, as well as several other Django and general web development paradigms, like always remembering to explicitly save changes to models' attributes to the database and returning an HTTPResponseRedirect after changing server data. It also made me appreciate how easy database-backed web development was with Django, which did all the SQL work for me.</p>
+							</div>
+							<div class="projdescs" id="schemedesc">
+								<p style="font-size:20px">Scheme Interpreter</p>
+								<p>Classroom Project (CS61A, Fall 2014)</p>
+								<p>Skills: Python</p>
+								<p>For the last project in CS61A, we were asked to build an interpreter in Python for Scheme, a dialect of the Lisp functional programming language. I worked with a partner to implement Scheme in all of its parenthetical glory; we ended up with a nice interpreter that could do basic arithmetic, define variables, Scheme pairs, and Scheme lists, create and call lambda procedures with both lexical and dynamic scope(in which case we called them Mu procedures), and carry out Scheme special forms, like if, begin, cond, let, and quote (it's pretty unique how you can manipulate the Scheme language itself). I think this project was the most instructive out of our 61A projects; I learned a great deal about the important process of making your own interpreter. I learned how to parse user input using lexical and syntactic analysis; in this project, for example, we converted the input into Linked List instances. And I learned about the mutually recursive processes of evaluation and application: evaluating something requires applying the operator to the operands, and applying a procedure requires evaluating the procedure's body in a local frame.</p>
+							</div>
+						</div>
+					</row>
+				</div>
+		</div>
+		<!-- <nav class="navbar navbar-default" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="bootstrap.html">Michael Ju</a>
+				</div>	
+				<div>
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="bootstrap.html">About</a></li>
+						<li><a href="#">Coursework</a></li>
+						<li><a href="#">Projects</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+
+		<div class="container" style="text-align:center">
+			<row>
+				<div class="col-xs-12">
+					<h1>Michael Ju</h1>
+				</div>
+			</row>
+			<row>
+				<div class="col-xs-12">
+					<h2>About</h2>
+					<row>
+						<div class="col-xs-3"></div>
+						<div class="col-xs-6">
+							<p style="text-align:left">Hi! I'm Michael. I'm an undergraduate at the University of California, Berkeley, and I'm currently pursuing a degree in Computer Science.</p>
+						</div>
+						<div class="col-xs-3"></div>
+					</row>
+				</div>
+			</row>
+			<row>
+				<div class="clearfix visible-xs"></div>
+				<div class="col-xs-6">
+					<h2>Projects</h2>
+				</div>
+				<div class="col-xs-6">
+					<h2>Contact</h2>
+					<p>Reach me through:</p>
+					<dl class="dl-horizontal" style="text-align:left">
+						<dt>Email:</dt>
+						<dd>ju.michael@gmail.com</dd>
+						<dt>Phone:</dt>
+						<dd>(510) 364-8055</dd>
+					</dl>
+				</div>
+			</row>
+		</div> -->
+	</body>
+</html>
