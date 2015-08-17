@@ -3,9 +3,10 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="flatly.css">
-		<script src="jquery-1.11.2.min.js"></script>
-		<script src="bootstrap.min.js"></script>
+        <link rel="stylesheet" href="index.css">
+		<link rel="stylesheet" href="css-third-party/flatly.css">
+		<script src="js-third-party/jquery-1.11.2.min.js"></script>
+		<script src="js-third-party/bootstrap.min.js"></script>
 		<title>Michael Ju</title>
 	</head>
 	<body>
@@ -14,20 +15,21 @@
 				<li class="active"><a href="#about" data-toggle="tab">About</a></li>
 				<li><a href="#coursework" data-toggle="tab" id="courseworkbutton">Coursework</a></li>
 				<li><a href="#projects" data-toggle="tab" id="projectbutton">Projects</a></li>
+                <li><a href="#experience" data-toggle="tab" id="experiencebutton">Experience</a></li>
 			</ul>
 		</div>
 		<div class="container">
 			<row>
 				<div class="col-xs-3">
-					<img src="calpic1.jpg" class="img-responsive img-rounded" style="margin-top:25px">
+					<img src="images/calpic1.jpg" class="img-responsive img-rounded" style="margin-top:25px">
 				</div>
 				<div class="col-xs-9 lead">
 					<h2>Michael Ju</h2>
 					<p>Hi! I'm Michael. I'm an undergraduate at the University of California, Berkeley, and I'm
 						currently pursuing a degree in Computer Science.</p>
-					<p>Feel free to view my <a href="Michael Ju.pdf" target="_blank">resume</a> or contact me through:</br>
-					<strong>Email</strong>: <a href="mailto:ju.michael@gmail.com">ju.michael@gmail.com</a></br>
-					<strong>Phone</strong>: 510-364-8055</br>
+					<p>Feel free to view my <a href="Michael Ju.pdf" target="_blank">resume</a> or contact me through:<br>
+					<strong>Email</strong>: <a href="mailto:ju.michael@gmail.com">ju.michael@gmail.com</a><br>
+					<strong>Phone</strong>: 510-364-8055<br>
 					</p>
 				</div>
 			</row>
@@ -44,7 +46,7 @@
                                 I'm extremely eager to explore new topics and have not settled yet on a particular area of
                                 computer science. When I'm not coding, I enjoy running long distances, gaming, and playing the bass
 								guitar and the piano.</p>
-							<p>Thanks for reading!</br>Michael</p>
+							<p>Thanks for reading!<br>Michael</p>
 						</div>
 					</row>
 				</div>
@@ -117,7 +119,7 @@
 						</div>
 						<div class="col-xs-8" id="coursedesc">
 							<div class="descriptions" id="61Adesc">
-								<p style="font-size:20px">CS61A: The Structure and Interpretation of Computer Programs</p>
+								<p class="description-title">CS61A: The Structure and Interpretation of Computer Programs</p>
 								<p>This course focused mainly on Python, covering computing paradigms like recursion
                                     and object-oriented programming, data structures like linked lists and trees,
                                     and some more advanced topics, including iterators and streams. It also covered
@@ -126,7 +128,7 @@
                                     by discussing SQL tables, joins, and recursive queries in SQLite.</p>
 							</div>
 							<div class="descriptions" id="54desc">
-								<p style="font-size:20px">MATH 54: Linear Algebra and Differential Equations</p>
+								<p class="description-title">MATH 54: Linear Algebra and Differential Equations</p>
 								<p>The first half of MATH 54 introduced us to fundamental but crucial linear algebra
                                     topics, including linear systems, linear combinations, independence, and
                                     transformations, vector spaces and bases, and eigenvector/values. In the second
@@ -135,7 +137,7 @@
                                     Fourier sine and cosine series.</p>
 							</div>
 							<div class="descriptions" id="61Bdesc">
-								<p style="font-size:20px">CS61B: Data Structures and Advanced Programming</p>
+								<p class="description-title">CS61B: Data Structures and Advanced Programming</p>
                                 <p>In this course, with Java as our tool, we intensively analyzed numerous data
                                     structures, including singly and doubly linked lists, array lists, hash tables,
                                     binary search trees (both simple and left-leaning red-and-black trees), queues/stacks,
@@ -151,7 +153,7 @@
                                     Kevin Wayne and Robert Sedgewick.</p>
 							</div>
 							<div class="descriptions" id="70desc">
-								<p style="font-size:20px">CS70: Discrete Mathematics and Probability Theory</p>
+								<p class="description-title">CS70: Discrete Mathematics and Probability Theory</p>
                                 <p>This was my hardest but most interesting class! In the first half, we focused on logic,
                                     studying propositions, quantifiers, proof techniques, particularly weak and strong
                                     induction, and graph theory, including Eulerian tours and hypercubes.
@@ -165,33 +167,13 @@
                                     geometric (exponential in continuous probability), Poisson's, and normal.</p>
 							</div>
                             <div class="descriptions" id="61Cdesc">
-                                <p style="font-size: 20px">CS61C: Machine Structures</p>
+                                <p class="description-title"">CS61C: Machine Structures</p>
                                 <p>Coming soon!</p>
                             </div>
                             <div class="descriptions" id="170desc">
-                                <p style="font-size: 20px">CS170: Efficient Algorithms and Intractable Problems</p>
+                                <p class="description-title">CS170: Efficient Algorithms and Intractable Problems</p>
                                 <p>Coming soon!</p>
                             </div>
-							<script>
-								$(document).ready(function() {
-									$('#courseworkbutton').click(function() {
-										$('.descriptions').hide();
-									})
-									$('.link').click(function() {
-										$('.descriptions').hide();
-										var id = "#" + event.target.id + "desc";
-										$(id).show();
-									})
-									$('#projectbutton').click(function() {
-										$('.projdescs').hide();
-									})
-									$('.projbtn').click(function() {
-										$('.projdescs').hide();
-										var id = '#' + $(this).attr('id') + 'desc';
-										$(id).show();
-									})
-								});
-							</script>
 						</div>
 					</row>
 				</div>
@@ -206,15 +188,40 @@
 					<row>
 						<div class="col-xs-4">
 							<div class="btn-group-vertical btn-block">
-								<button  type="button" class="projbtn btn btn-block btn-success" id="pollsite">
-                                    Pollsite</button>
+                                <button type="button" class="projbtn btn btn-block btn-success" id="gitlet">
+                                    Gitlet
+                                </button>
+                                <button  type="button" class="projbtn btn btn-block btn-success" id="pollsite">
+                                    Pollsite
+                                </button>
 								<button type="button" class="projbtn btn btn-block btn-success" id="scheme">
-                                    Scheme Interpreter</button>
+                                    Scheme Interpreter
+                                </button>
 							</div>
 						</div>
 						<div class="col-xs-8">
+                            <div class="projdescs" id="gitletdesc">
+                                <p class="description-title">Gitlet</p>
+                                <p>Classroom Project (CS61B, Spring 2015)</p>
+                                <p>Skills: Java</p>
+                                <p>
+                                    Gitlet was one of the main projects students completed in CS61B. Using only Java and
+                                    its standard libraries, we were asked to design and implement our local version
+                                    control system. The system would have many of Git's commands (hence the name Gitlet),
+                                    including add, remove, commit, checkout, branch, merge, and rebase. This project was
+                                    significant because unlike earlier assignments, we were given no starter code from
+                                    the course instructors. I ended up learning and implementing some invaluable
+                                    functionalities, such as copying and comparing files using byte streams and saving
+                                    the state of Java objects with the Serializable interface. In addition, since each
+                                    operation we needed to complete came with time and space requirements, and since
+                                    61B was all about data structures, my Gitlet ended up being heavily dependent on
+                                    how I designed my objects. For example, I ended up modeling my branches after singly
+                                    linked lists, with the nodes being Commit objects, so that I could perform operations
+                                    like log, checkout, and merge as efficiently as possible.
+                                </p>
+                            </div>
 							<div class="projdescs" id="pollsitedesc">
-								<p style="font-size:20px">Pollsite</p>
+								<p class="description-title">Pollsite</p>
 								<p>Independent Project</p>
 								<p>Skills: HTML/CSS, JavaScript & jQuery, and Bootstrap for front-end display,
                                     Django-powered backend</p>
@@ -232,7 +239,7 @@
                                     development was with Django, which did all the SQL work for me.</p>
 							</div>
 							<div class="projdescs" id="schemedesc">
-								<p style="font-size:20px">Scheme Interpreter</p>
+								<p class="description-title">Scheme Interpreter</p>
 								<p>Classroom Project (CS61A, Fall 2014)</p>
 								<p>Skills: Python</p>
 								<p>For the last project in CS61A, we were asked to build an interpreter in Python for
@@ -254,6 +261,31 @@
 						</div>
 					</row>
 				</div>
+
+            <div id="experience" class="tab-pane fade container">
+                <row>
+                    <div class="col-xs-12">
+                        <h2>Experience</h2>
+                    </div>
+                </row>
+                <row>
+                    <div class="col-xs-4">
+                        <div class="btn-group-vertical btn-block">
+                            <button type="button" class="expbtn btn btn-block btn-success" id="coverity">
+                                Coverity, Inc.
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-xs-8">
+                        <div class="expdescs" id="coveritydesc">
+                            <p class="description-title">Coverity</p>
+                            <p>May 2015 - August 2015</p>
+                            <p>Skills: HTML/CSS, JavaScript & jQuery, Bootstrap, Java, some SQL</p>
+                            <p>Coming soon!</p>
+                        </div>
+                    </div>
+                </row>
+            </div>
 		</div>
 		<!-- <nav class="navbar navbar-default" role="navigation">
 			<div class="container-fluid">
@@ -307,5 +339,31 @@
 				</div>
 			</row>
 		</div> -->
-	</body>
+        <script>
+            $("#courseworkbutton").click(function() {
+                $(".descriptions").hide();
+            });
+            $(".link").click(function() {
+                $(".descriptions").hide();
+                var id = "#" + event.target.id + "desc";
+                $(id).show();
+            });
+            $("#projectbutton").click(function() {
+                $(".projdescs").hide();
+            });
+            $(".projbtn").click(function() {
+                $(".projdescs").hide();
+                var id = "#" + $(this).attr("id") + "desc";
+                $(id).show();
+            });
+            $("#experiencebutton").click(function() {
+                $(".expdescs").hide();
+            });
+            $(".expbtn").click(function() {
+                $(".expdescs").hide();
+                var id = "#" + $(this).attr("id") + "desc";
+                $(id).show();
+            });
+	    </script>
+    </body>
 </html>
