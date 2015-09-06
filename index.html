@@ -281,7 +281,38 @@
                             <p class="description-title">Coverity</p>
                             <p>May 2015 - August 2015</p>
                             <p>Skills: HTML/CSS, JavaScript & jQuery, Bootstrap, Java, some SQL</p>
-                            <p>Coming soon!</p>
+                            <p>
+                                As a technical intern for Coverity's Test Advisor dev team (the Test Advisor, or TA, is
+                                a static analysis tool for Java, .NET, and C++ that determines how well a a code project's
+                                classes and methods are covered by its tests), I worked primarily on the Business Modeler
+                                component. The Business Modeler is a web application that allows a user to create a visual
+                                representation of his/her code project by mapping classes to physical containers, or modules, on the
+                                screen. These modules can be renamed, added, removed, and even nested, and the overall
+                                layout of the model a user creates can be geometrically re-adjusted by dragging and dropping
+                                modules. In addition, the user can access metrics like the percentage of classes mapped
+                                for a package in his/her project code tree and the percentage of classes covered by
+                                tests for a particular module. With a visual organized model, he/she gets a clearer picture
+                                of which functionalities of the project are covered, modified, etc.<br>
+                                Coverity had an old Business Modeler, but its UI was written in Flex and considered to be
+                                outdated. I worked on revamping the front-end with primarily JavaScript and jQuery and
+                                little dependence on third-party frameworks. In addition, I implemented API services in
+                                Java for the back-end server, which was written using the Dropwizard
+                                <a href="http://www.dropwizard.io/" target="_blank"></a> framework. One of the greatest
+                                challenges I had on the front-end was designing algorithms for geometrically restructuring
+                                a model's layout after the user moves a module to another location, which ultimately
+                                involved determining which modules were in the moved module's width or height span and
+                                multiplying their physical dimensions by an appropriate ratio. Another challenge was
+                                constantly thinking about the trade-offs between performance and space; for example, I
+                                didn't want to store all of a project's classes on the client side because we could be
+                                dealing with a project with thousands of classes. This meant that I had to create smart
+                                back-end services and front-end data structures that would still allow me to do things like
+                                keeping track of percentage of classes mapped.<br>
+                                Overall, I had a fantastic time at Coverity. I learned a great deal about JavaScript and the
+                                full chain of a web application, from connecting the front-end via AJAX to the server to
+                                making useful API services by persisting and retrieving data to and from the database. And
+                                I definitely couldn't have made as much out of this internship without the help and advice
+                                I received from my dev team mentors.
+                            </p>
                         </div>
                     </div>
                 </row>
