@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="index.css">
 		<link rel="stylesheet" href="css-third-party/flatly.css">
+		<link rel="stylesheet" href="css-third-party/font-awesome-4.5.0/css/font-awesome.min.css">
 		<script src="js-third-party/jquery-1.11.2.min.js"></script>
 		<script src="js-third-party/bootstrap.min.js"></script>
 		<title>Michael Ju</title>
@@ -27,9 +28,10 @@
 					<h2>Michael Ju</h2>
 					<p>Hi! I'm Michael. I'm an undergraduate at the University of California, Berkeley, and I'm
 						currently pursuing a degree in Computer Science.</p>
-					<p>Feel free to view my <a href="Michael Ju.pdf" target="_blank">resume</a> or contact me through:<br>
-					<strong>Email</strong>: <a href="mailto:ju.michael@gmail.com">ju.michael@gmail.com</a><br>
-					<strong>Phone</strong>: 510-364-8055<br>
+					<p>Feel free to view my <a href="Michael Ju.pdf" target="_blank">resume</a> or contact me via:<br>
+					<a href="mailto:ju.michael@gmail.com"><span class="fa fa-envelope fa-2x"></span></a>
+					<a href="https://linkedin.com/in/michaelju" target="_blank"><span class="fa fa-linkedin-square fa-2x"></span></a>
+					<a href="https://github.com/michaelj23" target="_blank"><span class="fa fa-github fa-2x"></span></a>
 					</p>
 				</div>
 			</row>
@@ -188,11 +190,11 @@
 					<row>
 						<div class="col-xs-4">
 							<div class="btn-group-vertical btn-block">
-                                <button type="button" class="projbtn btn btn-block btn-success" id="gitlet">
-                                    Gitlet
-                                </button>
                                 <button  type="button" class="projbtn btn btn-block btn-success" id="pollsite">
                                     Pollsite
+                                </button>
+                                <button type="button" class="projbtn btn btn-block btn-success" id="gitlet">
+                                    Gitlet
                                 </button>
 								<button type="button" class="projbtn btn btn-block btn-success" id="scheme">
                                     Scheme Interpreter
@@ -200,6 +202,24 @@
 							</div>
 						</div>
 						<div class="col-xs-8">
+						<div class="projdescs" id="pollsitedesc">
+							<p class="description-title">Pollsite</p>
+							<p>Independent Project</p>
+							<p>Skills: HTML/CSS, JavaScript & jQuery, and Bootstrap for front-end display,
+                                    Django-powered backend</p>
+							<p><a href="https://jumichael.pythonanywhere.com" target="_blank">Pollsite</a> is
+                                    a Django-powered project I undertook to get familiar with the Django
+                                    framework and learn about the functionality it offered, as well as get experience with designing user interfaces with Bootstrap and JavaScript/jQuery. It's a simple website
+                                    built off the Django tutorial that lets registered members make their own polls
+                                    and vote on other member's polls. Pollsite is composed of two applications: a
+                                    basic user authentication application and a voting application that processes users'
+                                    votes as well as their creation and removal of polls through a dynamic UI. This project definitely accustomed me
+                                    to Django's model-view-template system, as well as several other Django and general
+                                    web development paradigms, like always remembering to persist changes to
+                                    models' attributes to the database and returning an HTTPResponseRedirect after
+                                    changing server data. It also made me appreciate how easy database-backed web
+                                    development was with Django, which did all the SQL work for me.</p>
+						</div>
                             <div class="projdescs" id="gitletdesc">
                                 <p class="description-title">Gitlet</p>
                                 <p>Classroom Project (CS61B, Spring 2015)</p>
@@ -220,24 +240,6 @@
                                     like log, checkout, and merge as efficiently as possible.
                                 </p>
                             </div>
-							<div class="projdescs" id="pollsitedesc">
-								<p class="description-title">Pollsite</p>
-								<p>Independent Project</p>
-								<p>Skills: HTML/CSS, JavaScript & jQuery, and Bootstrap for front-end display,
-                                    Django-powered backend</p>
-								<p><a href="https://github.com/michaelj23/Pollsite" target="_blank">Pollsite</a> is
-                                    a Django-powered project I undertook mainly to get familiar with the Django
-                                    framework and learn about the functionality it offered. It's a simple website
-                                    built off the Django tutorial that lets registered members make their own polls
-                                    and vote on other member's polls. Pollsite is composed of two applications: a
-                                    basic user authentication application and a voting application that processes users'
-                                    votes as well as their creation and removal of polls. This project definitely accustomed me
-                                    to Django's model-view-template system, as well as several other Django and general
-                                    web development paradigms, like always remembering to explicitly persist changes to
-                                    models' attributes to the database and returning an HTTPResponseRedirect after
-                                    changing server data. It also made me appreciate how easy database-backed web
-                                    development was with Django, which did all the SQL work for me.</p>
-							</div>
 							<div class="projdescs" id="schemedesc">
 								<p class="description-title">Scheme Interpreter</p>
 								<p>Classroom Project (CS61A, Fall 2014)</p>
