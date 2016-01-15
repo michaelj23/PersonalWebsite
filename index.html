@@ -92,12 +92,16 @@
                                                 CS170: Efficient Algorithms and Intractable Problems</a></li>
 										</ul>
 								</div>
-								<!-- <div class="btn=group">
-									<button type="button" class="btn btn-success disabled btn-block dropdown-toggle" data-toggle="dropdown"> Spring 2016 <span class="caret"></span></button>
+								<div class="btn=group">
+									<button type="button" class="btn btn-success btn-block dropdown-toggle" data-toggle="dropdown"> Spring 2016 <span class="caret"></span></button>
 										<ul class="dropdown-menu">
+											<li><a href="#" id="186" class="link">
+												CS186: Introduction to Database Systems</a></li>
+											<li><a href="#" id="188" class="link">
+												CS188: Introduction to Artificial Intelligence</a></li>
 										</ul>
 								</div>
-								<div class="btn=group">
+								<!-- <div class="btn=group">
 									<button type="button" class="btn btn-success disabled btn-block dropdown-toggle" data-toggle="dropdown"> Fall 2016 <span class="caret"></span></button>
 										<ul class="dropdown-menu">
 										</ul>
@@ -176,6 +180,14 @@
                                 <p class="description-title">CS170: Efficient Algorithms and Intractable Problems</p>
                                 <p>Another very tough but very interesting and useful class. We ended up going over numerous useful problem-solving techniques throughout the semester, and I definitely think that my ability to analyze a problem and devise algorithms has improved as a result of this class's extremely challenging homework problems. We began by going over divide-and-conquer techniques, highlighting some notable examples such as mergesort, median-finding, and polynomial multiplication in <var>O(n log n)</var> time using the Fast-Fourier Transform. We then moved on to graph theory, covering basic search algorithms like depth-first and breadth-first search and emphasizing the unique properties of directed acyclic graphs, such as linearization. We then went over shortest-path algorithms like Dijkstra's and Bellman-Ford (for the presence of negative edges). After extensive graph theory, we focused on the greedy approach to algorithmic design--taking the immediate most rewarding option without considering the future. Some greedy algorithms highlighted were minimum-spanning-tree algorithms like Kruskal's and Prim's and Huffman tree encoding. After greedy came two heavyweights of algorithmic design: dynamic and linear programming. I absolutely enjoyed dynamic programming because it is able to solve in polynomial time problems that seem, at first glance, tremendously difficult. I loved discovering the recurrence relation for a problem that told me the order in which to solve my subproblems because they were often so simply and elegant yet so very powerful. Some particular problems discussed in class were calculating edit distance and the Floyd-Warshall algorithm, used to find the shortest paths between all pairs of points in a graph. Linear programming also came across as extremely powerful. We discussed flow networks and the Ford-Fulkerson algorithm used to find the max flow, the concept of the dual LP as a certificate of optimization (in the case of a flow network, the total edge capacity of the minimum cut is precisely the maximum flow possible), and finally, reducing any circuit, and thus any polynomial-time algorithm to a linear program. Linear programming was not as appealing as dynamic programming, though, since we didn't really study how linear programs were actually solved in polynomial time; we instead just devised linear programs and used a linear program solver as a black box. For our last topic, we covered intractable, NP-complete problems with no known polynomial-time algorithm, such as the infamous Traveling Salesman Problem, the satisfiability problem, and the set cover problem. We studied reductions and tackled many questions where we had to reduce an NP-complete problem A to a problem B to prove that B was NP-hard. We discussed that all NP-complete problems were essentially the "same" problem, and that if we could find a polynomial-time algorithm for one of them, we had a polynomial-time algorithm for any problem in NP. Lastly, we went over a couple approximation algorithms for certain NP-complete problems, such as vertex cover, that could approximate the optimal solution to certain factor. In fact, one of our final assignments was a coding project where we had to devise approximation algorithms for a given NP-hard problem, Maximum Acyclic Subgraph (given a directed graph, find the least number of edges to remove that will result in no cycles). Overall a very useful class and a great introduction to theoretical computer science.</p>
                             </div>
+                            <div class="descriptions" id="186desc">
+                            	<p class="description-title">CS186: Introduction to Database Systems</p>
+                            	<p>Coming soon!</p>
+                            </div>
+                            <div class="descriptions" id="188desc">
+                            	<p class="description-title">CS188: Introduction to Artificial Intelligence</p>
+                            	<p>Coming soon!</p>
+                            </div>
 						</div>
 					</row>
 				</div>
@@ -190,6 +202,9 @@
 					<row>
 						<div class="col-xs-4">
 							<div class="btn-group-vertical btn-block">
+								<button type="button" class="projbtn btn btn-block btn-success" id="contact">
+									Contact
+								</button>
                                 <button  type="button" class="projbtn btn btn-block btn-success" id="pollsite">
                                     Pollsite
                                 </button>
@@ -202,28 +217,37 @@
 							</div>
 						</div>
 						<div class="col-xs-8">
-						<div class="projdescs" id="pollsitedesc">
-							<p class="description-title">Pollsite</p>
-							<p>Independent Project</p>
-							<p>Skills: HTML/CSS, JavaScript & jQuery, and Bootstrap for front-end display,
-                                    Django-powered backend</p>
-							<p><a href="https://jumichael.pythonanywhere.com" target="_blank">Pollsite</a> is
-                                    a Django-powered project I undertook to get familiar with the Django
-                                    framework and learn about the functionality it offered, as well as get experience with designing user interfaces with Bootstrap and JavaScript/jQuery. It's a simple website
-                                    built off the Django tutorial that lets registered members make their own polls
-                                    and vote on other member's polls. Pollsite is composed of two applications: a
-                                    basic user authentication application and a voting application that processes users'
-                                    votes as well as their creation and removal of polls through a dynamic UI. This project definitely accustomed me
-                                    to Django's model-view-template system, as well as several other Django and general
-                                    web development paradigms, like always remembering to persist changes to
-                                    models' attributes to the database and returning an HTTPResponseRedirect after
-                                    changing server data. It also made me appreciate how easy database-backed web
-                                    development was with Django, which did all the SQL work for me.</p>
-						</div>
+							<div class="projdescs" id="contactdesc">
+								<p class="description-title">Contact</p>
+								<p>Independent Project</p>
+								<p>Skills: Node/Express.js, Socket.IO, Mongoose for MongoDB database</p>
+								<p><a href="https://glacial-retreat-7884.herokuapp.com" target="_blank">Contact</a> is a real-time chatting web application. It has an authentication system: users of the site can log in and chat with other users in chatrooms. Chatrooms can be customized in several aspects, like privacy and maximum capacity. Also, users can invite other users to their chatrooms and request to join different public chatrooms. They receive notifications about invites and requests in real time.</p>
+								<p>This project was a way for me to become familiar with not only Node.js and its asynchronous style of programming but also other components of the MEAN stack. Indeed, I ended up using MongoDB (employing Mongoose.js as an object modeler) for my application's database and Express.js for its backend. I was pretty amazed to see that I could develop an entire web application, both front-end and back-end, with only JavaScript. All the components of the app, from database queries to browser scripts, ended up fitting so smoothly that I would sometimes forget which layer I was working on. I was also impressed with Socket.IO, the engine that allowed me to incorporate real-time messaging into my application. Before I found Socket.IO, I was weighing the implementation complexities of other real-time options, like long polling and WebSockets. Fortunately, Socket.IO's simple API allowed me to focus on the business logic behind real-time messaging and notifications and provided me with useful capabilities like broadcasting to multiple sockets. I didn't have to worry about when I should use long polling, when I should use WebSockets, etc.</p>
+								<p>Probably the most challenging aspect of this project was designing schemas for Mongoose models that correspond to MongoDB collections. Many of my collections had relationships that may have been easier to implement with a relational database and a framework like, say, Django. For example, Users and Chatrooms had a many-to-many relationship. I spent much of my time thinking about how I could maintain coherency between related users and chatrooms (which became more complicated when requests and invites came into the picture) with as few necessary queries as possible. Finally, for better performance, I wanted the browser to store only a limited number of chat messages and the user to be able to load previous messages. To accomplish this, I had to work on design a schema for saving chat messages to the database in equally sized chunks.</p>
+								<p>This project isn't completely finished. Some of my next steps include writing tests for my middleware and improving the application's UI.</p>
+							</div>
+							<div class="projdescs" id="pollsitedesc">
+								<p class="description-title">Pollsite</p>
+								<p>Independent Project</p>
+								<p>Technologies: HTML/CSS, JavaScript & jQuery, and Bootstrap for front-end display,
+	                                    Django-powered backend</p>
+								<p><a href="https://jumichael.pythonanywhere.com" target="_blank">Pollsite</a> is
+	                                    a Django-powered project I undertook to get familiar with the Django
+	                                    framework and learn about the functionality it offered, as well as get experience with designing user interfaces with Bootstrap and JavaScript/jQuery. It's a simple website
+	                                    built off the Django tutorial that lets registered members make their own polls
+	                                    and vote on other member's polls. Pollsite is composed of two applications: a
+	                                    basic user authentication application and a voting application that processes users'
+	                                    votes as well as their creation and removal of polls through a dynamic UI. This project definitely accustomed me
+	                                    to Django's model-view-template system, as well as several other Django and general
+	                                    web development paradigms, like always remembering to persist changes to
+	                                    models' attributes to the database and returning an HTTPResponseRedirect after
+	                                    changing server data. It also made me appreciate how easy database-backed web
+	                                    development was with Django, which did all the SQL work for me.</p>
+							</div>
                             <div class="projdescs" id="gitletdesc">
                                 <p class="description-title">Gitlet</p>
                                 <p>Classroom Project (CS61B, Spring 2015)</p>
-                                <p>Skills: Java</p>
+                                <p>Technologies: Java</p>
                                 <p>
                                     Gitlet was one of the main projects students completed in CS61B. Using only Java and
                                     its standard libraries, we were asked to design and implement our local version
@@ -243,7 +267,7 @@
 							<div class="projdescs" id="schemedesc">
 								<p class="description-title">Scheme Interpreter</p>
 								<p>Classroom Project (CS61A, Fall 2014)</p>
-								<p>Skills: Python</p>
+								<p>Technologies: Python</p>
 								<p>For the last project in CS61A, we were asked to build an interpreter in Python for
                                     Scheme, a dialect of the Lisp functional programming language. I worked with a
                                     partner to implement Scheme in all of its parenthetical glory; we ended up with
