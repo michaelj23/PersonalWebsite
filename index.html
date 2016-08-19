@@ -302,12 +302,27 @@
                 <row>
                     <div class="col-xs-4">
                         <div class="btn-group-vertical btn-block">
+                        	<button type="button" class="expbtn btn btn-block btn-success" id="glassdoor">
+                        		Glassdoor
+                        	</button>
                             <button type="button" class="expbtn btn btn-block btn-success" id="coverity">
-                                Coverity, Inc.
+                                Coverity
                             </button>
                         </div>
                     </div>
                     <div class="col-xs-8">
+                    	<div class="expdescs" id="glassdoordesc">
+                    		<p class="description-title">Glassdoor</p>
+                    		<p>May 2016 - August 2016</p>
+                    		<p>Skills: React.js, jQuery, JavaServer Pages, Java</p>
+                    		<p>
+                    			I interned for Glassdoor's core team and acquisitions team, completing projects under the company's lead web developers. My main stories involved front-end refactoring, transforming common UI features of the Glassdoor website into React.js components that are modular and reusable anywhere on the site. I coded and tested two major components that currently in production: Glassdoor's ubiquitous dropdown menus and its similarly widespread employer photo carousels. <br>
+                    			In addition to my React work, I also completed an interesting company infrastructure project. To streamline web app builds and patches, I moved static files out of the normal build and into their own repository. I created a Gulp task that lets web developers upload updated static files to an Amazon S3 bucket, which would service the web app's front end. I also wrote another task that generates a manifest of all static files, mapping each file's URI to a hash string used for cachebusting. In addition to JavaScript, this project involved a fair amount of Java; I needed to rewrite the back end to retrieve static resources from the new S3 bucket and use the manifest's cachebuster strings. This infrastructural move was crucial for productivity, as it allowed back-end engineers to iterate without worrying about unstable static files affecting their development and front-end engineers to patch static files without re-building everything.<br>
+                    			Finally, I worked on various bug fixes and smaller stories for teams that needed an extra developer for a sprint. One mini-project that I found to be especially significant was a redesigning of the site's login/locked-content modules (i.e., "Sign up or sign in now to get access to all of Glassdoor"). This assignment was not difficult; I simply needed to modify several JSPs and Sass files to make the site use the new version of the modules. However, I found out after the changes went to production that overall user registration increased by about 5%.<br>
+                    			Seeing my changes go live and actually impact the outside world was definitely the most rewarding aspect of my internship. It was something that I didn't experience with Coverity, whose products were used by other businesses and not publicly available. I also learned a great deal more about developing and testing in an agile environment, including working in 2-week sprints, using semantic versioning when updating dependencies, submitting pull requests to merge feature branches into release branches, and testing in a separate QA environment. And of course, I learned a tremendous amount of JavaScript, like coding in ES6 syntax and using Babel to compile it, using powerful tools like React and Redux, and testing with frameworks and libraries like Mocha and expect.js. Overall another valuable summer. 
+
+                    		</p>
+                    	</div>
                         <div class="expdescs" id="coveritydesc">
                             <p class="description-title">Coverity</p>
                             <p>May 2015 - August 2015</p>
