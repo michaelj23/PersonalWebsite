@@ -1,2 +1,2 @@
-# PersonalWebsite
-Code for my personal website
+# DEPRECATED -- PersonalWebsite
+Moved to repo michaelj23.github.io
